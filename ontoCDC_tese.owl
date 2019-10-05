@@ -1,0 +1,1063 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#"
+     xml:base="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-36="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#adquire -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#adquire">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Acao"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Produto"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Servico"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#cobra -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#cobra">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Acao"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Agente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#cobraindevidamente -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#cobraindevidamente">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#cobra"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#fornece -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#fornece">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Acao"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Produto"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Servico"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatiza -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatiza">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatizadopor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatizadopor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatizadopor">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Agente"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Evento"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Norma_Juridica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#realiza -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#realiza">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#realizadopor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Agente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Acao"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#realizadopor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#realizadopor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#temAcao -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#temAcao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Evento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Acao"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#temRegistro -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#temRegistro">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Agente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Registro"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#utiliza -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#utiliza">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Acao"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Produto"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Servico"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Acao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Acao"/>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Adquirir -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Adquirir">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#adquire"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Produto"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Servico"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Acao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Agente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Agente"/>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Bem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Bem">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Produto"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Objeto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Boa_Fe_Objetiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Boa_Fe_Objetiva">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_4_III_CDC"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Principios_Consumidor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#CDC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#CDC">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Codigo_Defesa_Consumidor"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Lei_8078_1990"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Direito_Consumidor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#CNPJ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#CNPJ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Registro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#CPF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#CPF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Registro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Cobrar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Cobrar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Acao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Cobrar_Indevidamente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Cobrar_Indevidamente">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#cobraindevidamente"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Agente"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Cobrar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Codigo_Defesa_Consumidor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Codigo_Defesa_Consumidor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Direito_Consumidor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Consumidor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Consumidor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Destinatario_Final"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Pessoa_Fisica"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Pessoa_Juridica"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#realiza"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Adquirir"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Utilizar"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Agente"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatizadopor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Definicao_Consumidor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Definicao_Consumidor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Definicao_Consumidor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_2_CDC"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#CDC"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatiza"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Consumidor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Definicao_Fornecedor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Definicao_Fornecedor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_3_CDC"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#CDC"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatiza"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Fornecedor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Definicao_Produto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Definicao_Produto">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_3_P1_CDC"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#CDC"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatiza"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Produto"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Definicao_Servico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Definicao_Servico">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_3_P2_CDC"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#CDC"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatiza"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Servico"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Destinatario_Final -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Destinatario_Final"/>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Direito_Consumidor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Direito_Consumidor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Norma_Juridica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Direitos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Direitos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Direito_Consumidor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Equivalencia_Negocial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Equivalencia_Negocial">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_6_II_CDC"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Principios_Consumidor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Evento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Evento"/>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Fornecedor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Fornecedor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Pessoa_Fisica"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Pessoa_Juridica"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#realiza"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Fornecer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Agente"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatizadopor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Definicao_Fornecedor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Fornecer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Fornecer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#fornece"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Produto"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Servico"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Acao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Hipossuficiencia_Consumidor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Hipossuficiencia_Consumidor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_6_VIII_CDC"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Principios_Consumidor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Imaterial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Imaterial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Bem"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Objeto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Imovel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Imovel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Objeto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Lei_8078_1990 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Lei_8078_1990">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Direito_Consumidor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Material -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Material">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Bem"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Objeto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Movel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Movel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Objeto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Negocio_Juridico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Negocio_Juridico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Evento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Norma_Juridica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Norma_Juridica"/>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Objeto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Objeto"/>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Pessoa_Fisica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Pessoa_Fisica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Agente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Pessoa_Juridica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Pessoa_Juridica">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Pessoa_Juridica_Privada"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Pessoa_Juridica_Publica"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#temRegistro"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#CNPJ"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Agente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Pessoa_Juridica_Privada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Pessoa_Juridica_Privada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Pessoa_Juridica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Pessoa_Juridica_Publica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Pessoa_Juridica_Publica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Pessoa_Juridica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Principios_Consumidor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Principios_Consumidor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#CDC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Produto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Produto">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Imovel"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Movel"/>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Imaterial"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Material"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Objeto"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatizadopor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Definicao_Produto"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Protecionismo_Consumidor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Protecionismo_Consumidor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_1_CDC"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Principios_Consumidor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Registro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Registro"/>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Relacao_Consumo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Relacao_Consumo">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#temAcao"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Fornecer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#temAcao"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Adquirir"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Utilizar"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Negocio_Juridico"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatizadopor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Boa_Fe_Objetiva"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatizadopor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Equivalencia_Negocial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatizadopor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Hipossuficiencia_Consumidor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatizadopor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Protecionismo_Consumidor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatizadopor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Reparacao_Integral"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatizadopor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Vulnerabilidade_Consumidor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatizadopor"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Transparencia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Reparacao_Integral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Reparacao_Integral">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_6_VI_CDC"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Principios_Consumidor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Repeticao_Indebito -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Repeticao_Indebito">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#repeticao_indebito"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Direitos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Servico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Servico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Objeto"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatizadopor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Definicao_Servico"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Transparencia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Transparencia">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_4_caput_CDC"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_6_III_CDC"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Principios_Consumidor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Utilizar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Utilizar">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#utiliza"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Produto"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Servico"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Acao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Vulnerabilidade_Consumidor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Vulnerabilidade_Consumidor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_4_I_CDC"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Principios_Consumidor"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_1_CDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_1_CDC"/>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_2_CDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_2_CDC"/>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_3_CDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_3_CDC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Definicao_Fornecedor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_3_P1_CDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_3_P1_CDC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Definicao_Produto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_3_P2_CDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_3_P2_CDC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Definicao_Servico"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_42_PU_CDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_42_PU_CDC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Repeticao_Indebito"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_4_III_CDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_4_III_CDC"/>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_4_I_CDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_4_I_CDC"/>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_4_caput_CDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_4_caput_CDC"/>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_6_III_CDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_6_III_CDC"/>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_6_II_CDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_6_II_CDC"/>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_6_VIII_CDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_6_VIII_CDC"/>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_6_VI_CDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#art_6_VI_CDC"/>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#cnpj1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#cnpj1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#CNPJ"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#cobranca_m -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#cobranca_m">
+        <cobraindevidamente rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#maria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#contrato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#contrato">
+        <temAcao rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#cobranca_m"/>
+        <temAcao rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#contratou"/>
+        <temAcao rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#vendeu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#contratou -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#contratou">
+        <adquire rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#tv"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#cpf1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#cpf1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#CPF"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#loja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#loja">
+        <realiza rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#cobranca_m"/>
+        <realiza rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#vendeu"/>
+        <temRegistro rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#cnpj1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#maria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#maria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Destinatario_Final"/>
+        <realiza rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#contratou"/>
+        <temRegistro rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#cpf1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#repeticao_indebito -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#repeticao_indebito"/>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#servico1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#servico1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Servico"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#tv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#tv">
+        <rdf:type rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Movel"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Produto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#vendeu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#vendeu">
+        <fornece rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#tv"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Relacao_Consumo"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#temAcao"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Cobrar_Indevidamente"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#normatizadopor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Repeticao_Indebito"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#temRegistro"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#CPF"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/italo/ontologies/2019/9/untitled-ontology-36#Pessoa_Fisica"/>
+    </owl:Restriction>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
