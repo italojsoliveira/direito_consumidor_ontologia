@@ -1,3 +1,7 @@
-# Ontologia de Direito do Consumidor
+# Uma Ontologia de Direito do Consumidor Brasileiro
 
-Uma pequena ontologia jurídica em OWL para o Direito do Consumidor brasileiro / A small legal ontology in OWL for Brazilian Consumer Protection Law
+# An Ontology of Brazilian Consumer Protection Law
+
+PT: Uma pequena ontologia em OWL para o Direito do Consumidor brasileiro. É apenas uma prova de conceito.
+
+EN: A small ontology in OWL for Brazilian Consumer Protection Law. It is just a proof of concept.
